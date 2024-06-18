@@ -12,14 +12,16 @@ import ClickCounter from './components/ClickCounter';
 import Hovercounter from './components/Hovercounter';
 import Counter2 from './components/Counter2';
 import ClickCountertwo from './components/ClickCountertwo';
+import ComponentD from './components/Context/ComponentD';
+import { UserProvider } from './components/Context/userContext';
+
 function App() {
   return (
     <div className="App">
-      <Counter2
-      render={(count,increment)=>(
-        <ClickCountertwo count={count} increment={increment}/>
-      )}
-      />
+      <UserProvider value='Rachit'>
+        <ComponentD />
+      </UserProvider>
+      
 
     </div>
   );
