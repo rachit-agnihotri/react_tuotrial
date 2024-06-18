@@ -10,12 +10,16 @@ import Lifecyclemounting from './components/Lifecyclemounting';
 import Fragments from './components/Fragments';
 import ClickCounter from './components/ClickCounter';
 import Hovercounter from './components/Hovercounter';
-
+import Counter2 from './components/Counter2';
+import ClickCountertwo from './components/ClickCountertwo';
 function App() {
   return (
     <div className="App">
-      <ClickCounter name='rachit'/>
-      <Hovercounter/>
+      <Counter2
+      render={(count,increment)=>(
+        <ClickCountertwo count={count} increment={increment}/>
+      )}
+      />
 
     </div>
   );
