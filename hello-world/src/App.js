@@ -14,15 +14,13 @@ import Counter2 from './components/Counter2';
 import ClickCountertwo from './components/ClickCountertwo';
 import ComponentD from './components/Context/ComponentD';
 import { UserProvider } from './components/Context/userContext';
-
+import Hookcounter from './hooks/Hookcounter';
+import Hookcounterobject from './hooks/Hookcounterobject';
+import Hookcounterone from './hooks/Hookcounterone';
 function App() {
   return (
-    <div className="App">
-      <UserProvider value='Rachit'>
-        <ComponentD />
-      </UserProvider>
-      
-
+    <div className="App">      
+      <Hookcounterone/>
     </div>
   );
 }
