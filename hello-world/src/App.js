@@ -17,10 +17,17 @@ import { UserProvider } from './components/Context/userContext';
 import Hookcounter from './hooks/Hookcounter';
 import Hookcounterobject from './hooks/Hookcounterobject';
 import Hookcounterone from './hooks/Hookcounterone';
+import Hookmouse from './hooks/Hookmouse';
+import Mousecontainer from './hooks/Mousecontainer';
+import HookuseRedux from './hooks/HookuseRedux';
+import Countertwo_useredux from './hooks/CounterTwo_useredux';
+import Counterthree_usereducer from './hooks/Counterthree_usereducer';
+import Focus_useref from './hooks/Focus_useref';
+import Timer_useref from './hooks/Timer_useref';
 function App() {
   return (
-    <div className="App">      
-      <Hookcounterone/>
+    <div className="App"> 
+      <Timer_useref/>    
     </div>
   );
 }
